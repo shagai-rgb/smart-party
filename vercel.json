@@ -27,10 +27,25 @@
     }
   ],
   "routes": [
-    { "src": "/system-admin/(.*)", "dest": "/index.html" },
-    { "src": "/election/(.*)", "dest": "/index.html" },
-    { "src": "/national-audit/(.*)", "dest": "/index.html" },
-    { "src": "/political-party/(.*)", "dest": "/index.html" },
-    { "src": "/private-audit/(.*)", "dest": "/index.html" }
+    { "src": "/system-admin/(.*)", "dest": "/apps/system-admin/dist/$1" },
+    { "src": "/system-admin", "dest": "/apps/system-admin/dist/index.html" },
+
+    { "src": "/election/(.*)", "dest": "/apps/election/dist/$1" },
+    { "src": "/election", "dest": "/apps/election/dist/index.html" },
+
+    { "src": "/national-audit/(.*)", "dest": "/apps/national-audit/dist/$1" },
+    {
+      "src": "/national-audit",
+      "dest": "/apps/national-audit/dist/index.html"
+    },
+
+    { "src": "/political-party/(.*)", "dest": "/apps/political-party/dist/$1" },
+    {
+      "src": "/political-party",
+      "dest": "/apps/political-party/dist/index.html"
+    },
+
+    { "src": "/private-audit/(.*)", "dest": "/apps/private-audit/dist/$1" },
+    { "src": "/private-audit", "dest": "/apps/private-audit/dist/index.html" }
   ]
 }
