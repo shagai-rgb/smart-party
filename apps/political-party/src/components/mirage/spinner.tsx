@@ -1,0 +1,12 @@
+import { LoaderIcon } from 'lucide-react'
+
+import { cn } from '@/lib/utils'
+
+import type { IconProps } from '@/shared/utils/icon'
+
+const Spinner = (props: IconProps) => {
+  const { className, ...rest } = props
+  return <LoaderIcon className={cn('animate-spin', className)} {...rest} />
+}
+
+export default Spinner
