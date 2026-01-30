@@ -5,3 +5,5 @@ dist/
 .pnp.*
 .pnpm-debug.log
 .cache/
+.vercel
+.env*.local
