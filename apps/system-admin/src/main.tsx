@@ -8,7 +8,9 @@ import './index.css'
 import { APP_ROUTES } from './routes/app.routes'
 import { errorHandler } from './shared/utils/fetch'
 
-const router = createBrowserRouter(APP_ROUTES)
+const router = createBrowserRouter(APP_ROUTES, {
+  basename: '/system-admin/' // ✅ Vercel subpath
+})
 
 const queryClient = new QueryClient({
   defaultOptions: {
