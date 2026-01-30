@@ -41,14 +41,12 @@ export default function App() {
         <SidebarProvider defaultOpen={defaultOpen}>
           <DirectionProvider>
             <ModuleProvider>
-              <Suspense>
+              <Suspense fallback={<div>Loading...</div>}>
                 <TooltipProvider delayDuration={300}>
                   <LazyMotion features={loadFeatures}>
-                    {/* <AuthProvider> */}
                     <div className={cn('h-screen w-screen', !isHome && 'px-2')}>
                       <Outlet />
                     </div>
-                    {/* </AuthProvider> */}
                   </LazyMotion>
                 </TooltipProvider>
               </Suspense>
