@@ -1,0 +1,13 @@
+{
+  "builds": [
+    {
+      "src": "apps/election/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    { "src": "/election/(.*)", "dest": "/apps/election/dist/$1" },
+    { "src": "/election", "dest": "/apps/election/dist/index.html" }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "builds": [
+    {
+      "src": "apps/system-admin/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/system-admin/assets/(.*)",
+      "dest": "/apps/system-admin/dist/assets/$1"
+    },
+    {
+      "src": "/system-admin/?(.*)",
+      "dest": "/apps/system-admin/dist/index.html"
+    }
+  ]
+}

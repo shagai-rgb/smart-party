@@ -1,0 +1,19 @@
+{
+  "builds": [
+    {
+      "src": "apps/political-party/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/political-party/assets/(.*)",
+      "dest": "/apps/political-party/dist/assets/$1"
+    },
+    {
+      "src": "/political-party/?(.*)",
+      "dest": "/apps/political-party/dist/index.html"
+    }
+  ]
+}

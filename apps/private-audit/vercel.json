@@ -1,0 +1,19 @@
+{
+  "builds": [
+    {
+      "src": "apps/private-audit/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/private-audit/assets/(.*)",
+      "dest": "/apps/private-audit/dist/assets/$1"
+    },
+    {
+      "src": "/private-audit/?(.*)",
+      "dest": "/apps/private-audit/dist/index.html"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "builds": [
+    {
+      "src": "apps/national-audit/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/national-audit/assets/(.*)",
+      "dest": "/apps/national-audit/dist/assets/$1"
+    },
+    {
+      "src": "/national-audit/?(.*)",
+      "dest": "/apps/national-audit/dist/index.html"
+    }
+  ]
+}
