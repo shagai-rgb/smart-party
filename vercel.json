@@ -36,14 +36,8 @@
       "dest": "/apps/system-admin/dist/index.html"
     },
 
-    {
-      "src": "/election/assets/(.*)",
-      "dest": "/apps/election/dist/assets/$1"
-    },
-    {
-      "src": "/election/?(.*)",
-      "dest": "/apps/election/dist/index.html"
-    },
+    { "src": "/election/assets/(.*)", "dest": "/apps/election/dist/assets/$1" },
+    { "src": "/election/?(.*)", "dest": "/apps/election/dist/index.html" },
 
     {
       "src": "/national-audit/assets/(.*)",
