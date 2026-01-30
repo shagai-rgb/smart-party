@@ -1,4 +1,31 @@
 {
+  "builds": [
+    {
+      "src": "apps/system-admin/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    },
+    {
+      "src": "apps/election/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    },
+    {
+      "src": "apps/national-audit/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    },
+    {
+      "src": "apps/political-party/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    },
+    {
+      "src": "apps/private-audit/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
   "routes": [
     {
       "src": "/system-admin/assets/(.*)",
@@ -9,14 +36,8 @@
       "dest": "/apps/system-admin/dist/index.html"
     },
 
-    {
-      "src": "/election/assets/(.*)",
-      "dest": "/apps/election/dist/assets/$1"
-    },
-    {
-      "src": "/election/(.*)",
-      "dest": "/apps/election/dist/index.html"
-    },
+    { "src": "/election/assets/(.*)", "dest": "/apps/election/dist/assets/$1" },
+    { "src": "/election/(.*)", "dest": "/apps/election/dist/index.html" },
 
     {
       "src": "/national-audit/assets/(.*)",
