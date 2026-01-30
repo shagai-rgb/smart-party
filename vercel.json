@@ -1,15 +1,24 @@
 {
-  "rewrites": [
-    { "source": "/system-admin/(.*)", "destination": "/apps/system-admin/$1" },
-    { "source": "/election/(.*)", "destination": "/apps/election/$1" },
+  "routes": [
     {
-      "source": "/national-audit/(.*)",
-      "destination": "/apps/national-audit/$1"
+      "src": "/system-admin/(.*)",
+      "dest": "/apps/system-admin/dist/index.html"
     },
     {
-      "source": "/political-party/(.*)",
-      "destination": "/apps/political-party/$1"
+      "src": "/election/(.*)",
+      "dest": "/apps/election/dist/index.html"
     },
-    { "source": "/private-audit/(.*)", "destination": "/apps/private-audit/$1" }
+    {
+      "src": "/national-audit/(.*)",
+      "dest": "/apps/national-audit/dist/index.html"
+    },
+    {
+      "src": "/political-party/(.*)",
+      "dest": "/apps/political-party/dist/index.html"
+    },
+    {
+      "src": "/private-audit/(.*)",
+      "dest": "/apps/private-audit/dist/index.html"
+    }
   ]
 }
