@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    { "source": "/system-admin/(.*)", "destination": "/apps/system-admin/$1" },
+    { "source": "/election/(.*)", "destination": "/apps/election/$1" },
+    {
+      "source": "/national-audit/(.*)",
+      "destination": "/apps/national-audit/$1"
+    },
+    {
+      "source": "/political-party/(.*)",
+      "destination": "/apps/political-party/$1"
+    },
+    { "source": "/private-audit/(.*)", "destination": "/apps/private-audit/$1" }
+  ]
+}
