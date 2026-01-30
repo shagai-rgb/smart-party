@@ -96,9 +96,9 @@ export const Hero = () => {
     <div className="relative flex-1  w-full px-4">
       <BannerSection
         title='"УХААЛАГ НАМ" төсөл'
-        bgImage="/businessman-holding-pen-s-successful-corporate-agreement-generated-by-ai.jpg"
+        bgImage="businessman-holding-pen-s-successful-corporate-agreement-generated-by-ai.jpg"
         desc="Алсын хараа 5.4.1. Төрийн албан хаагчийн үйл ажиллагаанд гүйцэтгэлийн удирдлагын тогтолцоог нэвтрүүлж, ажлын үр дүнгээс хамаарч шатлан дэвших зохицуулалтыг боловсронгуй болгоно."
-        logo="/logo.png"
+        logo="logo.png"
         gradientColor=""
       />
       <div className="relative  z-10 mx-auto py-6  container h-fit flex justify-center max-w-12/12">
@@ -122,7 +122,7 @@ export const Hero = () => {
                         style={{ backgroundColor: primary }}
                       /> */}
                       <div
-                        className="flex items-center justify-center w-30 h-30 p-8 flex-shrink-0"
+                        className="flex items-center justify-center w-30 h-30 p-8 shrink-0"
                         style={{ backgroundColor: item.bgColor }}
                       >
                         <IconComponent className="w-12 h-12 md:w-16 md:h-16 text-white" />

@@ -96,9 +96,9 @@ export const Hero = () => {
     <div className="relative flex-1  w-full px-4">
       <BannerSection
         title='"УХААЛАГ НАМ" төсөл'
-        bgImage="/national-audit.jpg"
+        bgImage="national-audit.jpg"
         desc="Алсын хараа 5.4.1. Төрийн албан хаагчийн үйл ажиллагаанд гүйцэтгэлийн удирдлагын тогтолцоог нэвтрүүлж, ажлын үр дүнгээс хамаарч шатлан дэвших зохицуулалтыг боловсронгуй болгоно."
-        logo="/Ministry_01.jpg"
+        logo="Ministry_01.jpg"
         gradientColor=""
       />
       <div className="relative  z-10 mx-auto py-6  container h-fit flex justify-center max-w-12/12">
