@@ -9,7 +9,7 @@ import { APP_ROUTES } from './routes/app.routes'
 import { errorHandler } from './shared/utils/fetch'
 
 const router = createBrowserRouter(APP_ROUTES, {
-  basename: '/election/' // ✅ Vercel subpath
+  basename: '/election/'
 })
 
 const queryClient = new QueryClient({
